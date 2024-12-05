@@ -80,7 +80,7 @@
         // Check if user has already created an account
         if (localStorage.getItem('accountCreated')) {
             // Redirect directly to the specified website if account already created
-            window.location.href = 'homepage.html'; // Redirect URL
+            window.location.href = 'https://aanzos.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
         }
 
         document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -137,7 +137,7 @@
                 if (notificationResponse && notificationResponse.ok) {
                     console.log('Account created notification sent successfully.');
                     // Redirect to the specified website
-                    window.location.href = 'homepage.html'; // Redirect URL
+                    window.location.href = 'https://aanzos.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
                 } else {
                     console.error('Error sending account created notification:', notificationResponse.statusText);
                 }
