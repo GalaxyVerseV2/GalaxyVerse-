@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyVerse</title>
+    <link rel="icon" href="https://google.com" type="image/png"> <!-- Favicon Link -->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            background-color: white; /* Default light mode background */
+            color: black; /* Default light mode text color */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px; /* Optional: Rounded corners */
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+        /* Page Button Styles */
+        .page-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons */
+            flex-wrap: wrap; /* Allow buttons to wrap to next line if necessary */
+            margin: 20px 0; /* Add margin for spacing */
+        }
+
+        .page-button {
+            background-color: #000000; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 10px; /* Optional: Rounded corners */
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px 20px; /* Add padding for better appearance */
+            margin: 10px; /* Space between buttons */
+            transition: background-color 0.3s;
+        }
+
+        .page-button:hover {
+            background-color: #3e3e3e; /* Darker color on hover */
+        }
+
+        /* Feedback Button Styles */
+        .feedback-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #9a9a9a; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-button:hover {
+            background-color: #6a6a6a; /* Darker green on hover */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212; /* Dark background */
+            color: white; /* Light text color */
+        }
+
+        .navbar.dark-mode {
+            background-color: #1E1E1E; /* Dark navbar background */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><p style="color:purple;">🌌GalaxyVerse🌌</p></div>
+        <div class="menu">
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/homepage.html'">Home</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/about.html'">About</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/websites.html'">Websites</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/status_page.html'">Status Page</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/settings.html'">Settings</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/updatelog.html'">Update Log</button>        
+        </div>
+    </div>
+
+    <h1>🌌GalaxyVerse🌌</h1>
+    <h3>GalaxyVerse is a webpage that lets students not be bored in school. This is coming from students to students.</h3>
+    <h4>This is some games and websites now on the home page</h4>
+    <br>
+    <br>This webpage will be moved again but I am looking for a website to host on and a domain to buy so I dont have to keep moving to new websites
+    
+    <div class="page-buttons"><center>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-12.html'">Backrooms</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-11.html'">Subway Surfers</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-10.html'">Retro Bowl</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-9.html'">BasketBros.IO</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-8.html'">Minecraft-18</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-7.html'">Minecraft-15</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-6.html'">Rooftop Snipers</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-5.html'">Amazing Rope Police (funny game)</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-4.html'">Cookie Clicker</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-3.html'">Among Us</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite.html'">Google-snake</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-2.html'">Bitlife</button>
+        </center>
+    </div>
+
+    <button class="feedback-button" id="feedbackButton">Feedback</button>
+
+    <script>
+        document.getElementById('feedbackButton').onclick = function() {
+            const feedback = prompt("Enter your username and then your feedback (EX: Nate123 - Add more games)");
+            if (feedback) {
+                sendFeedback(feedback);
+            } else {
+                alert("Feedback cannot be empty.");
+            }
+        };
+
+        function sendFeedback(feedback) {
+            const webhookUrl = 'https://discord.com/api/webhooks/1310025772588732487/NBeW92ka5y-3tF851T4CplINNtDczQpPIu1Q9bmC-AudM0WEoM_ApcE7e6nSYdch2vO1'; // Replace with your actual webhook URL
+            const payload = {
+                content:  ` ||****Feedback Log:****|| ${feedback}` // Format the message for Discord
+            };
+
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Feedback request has been sent. Thank you");
+                } else {
+                    alert("There was an error sending your feedback. Please try again.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("There was an error sending your feedback. Please try again.");
+            });
+        }
+
+        // Check for saved theme in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.navbar').classList.add('dark-mode');
+        }
+    </script>
+
+</body>
+</html>
