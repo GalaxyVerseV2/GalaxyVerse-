@@ -80,7 +80,7 @@
         // Check if user has already created an account
         if (localStorage.getItem('accountCreated')) {
             // Redirect directly to the specified website if account already created
-            window.location.href = 'https://aanzos.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
+            window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
         }
 
         document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -99,7 +99,7 @@
             };
 
             // Send data to the webhook
-            fetch('YOUR_WEBHOOK_URL_HERE', { // Replace with your actual webhook URL
+            fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', { // Replace with your actual webhook URL
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -137,7 +137,7 @@
                 if (notificationResponse && notificationResponse.ok) {
                     console.log('Account created notification sent successfully.');
                     // Redirect to the specified website
-                    window.location.href = 'https://aanzos.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
+                    window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
                 } else {
                     console.error('Error sending account created notification:', notificationResponse.statusText);
                 }
