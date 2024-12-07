@@ -22,3 +22,8 @@ Username
 
 Server
 - [GalaxyVerse](https://discord.gg/ACwwBVtcSG)
+
+## Youtube
+
+Channel
+- [aanzo](https://www.youtube.com/@aanzo)
