@@ -19,5 +19,6 @@ If you would like to contact me for any sort of reason here are my socials
 ## Discord 
 Username
 - _aanzo
+
 Server
 - [GalaxyVerse](https://discord.gg/ACwwBVtcSG)
