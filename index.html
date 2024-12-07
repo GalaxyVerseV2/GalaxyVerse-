@@ -99,7 +99,7 @@
             };
 
             // Send data to the webhook
-            fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', { // Replace with your actual webhook URL
+            fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -107,43 +107,44 @@
                 body: JSON.stringify(data)
             })
             .then(response => {
-                if (response.ok) {
-                    console.log('User data sent successfully.');
-                    // Set account created flag in localStorage
-                    localStorage.setItem('accountCreated', 'true');
-
-                    // Prepare account created notification data
-                    const accountCreatedData = {
-                        message: 'Account created successfully',
-                        user: {
-                            name: name,
-                            email: email
-                        }
-                    };
-
-                    // Send account created notification to the webhook
-                    return fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', { // Same or different webhook URL
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(accountCreatedData)
-                    });
-                } else {
-                    console.error('Error sending user data:', response.statusText);
+                if (!response.ok) {
+                    throw new Error('Error sending user data: ' + response.statusText);
                 }
+                console.log('User data sent successfully.');
+                // Set account created flag in localStorage
+                localStorage.setItem('accountCreated', 'true');
+
+                // Prepare account created notification data
+                const accountCreatedData = {
+                    content: 'Account created successfully', // Changed to use 'content' for Discord webhook
+                    embeds: [{
+                        title: 'New Account Created',
+                        fields: [
+                            { name: 'Name', value: name, inline: true },
+                            { name: 'Email', value: email, inline: true }
+                        ]
+                    }]
+                };
+
+                // Send account created notification to the webhook
+                return fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(accountCreatedData)
+                });
             })
             .then(notificationResponse => {
-                if (notificationResponse && notificationResponse.ok) {
-                    console.log('Account created notification sent successfully.');
-                    // Redirect to the specified website
-                    window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
-                } else {
-                    console.error('Error sending account created notification:', notificationResponse.statusText);
+                if (!notificationResponse.ok) {
+                    throw new Error('Error sending account created notification: ' + notificationResponse.statusText);
                 }
+                console.log('Account created notification sent successfully.');
+                // Redirect to the specified website
+                window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
             })
             .catch(error => {
-                console.error('Error sending data:', error);
+                console.error('Error:', error);
             });
         });
     </script>
