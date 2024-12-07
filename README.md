@@ -5,3 +5,5 @@ I made this website for me and my friends our school just loves to block stuff a
 and yes of course this did take a lot of my time between Thanksgiving and Christmas.
 
 I will have a VIP perks or access for some parts of this but it will come later in the future once this is done so I can make some profit off of it
+
+``https://galaxyversev2.github.io/GalaxyVerseV2/`` <---- is the website in case you didnt see the link on the side panel
