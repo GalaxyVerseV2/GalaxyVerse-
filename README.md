@@ -7,3 +7,17 @@ and yes of course this did take a lot of my time between Thanksgiving and Christ
 I will have a VIP perks or access for some parts of this but it will come later in the future once this is done so I can make some profit off of it
 
 ``https://galaxyversev2.github.io/GalaxyVerseV2/`` <---- is the website in case you didnt see the link on the side panel
+
+
+Languages used in this respiratory
+
+- CSS
+- JS
+- HTML
+
+If you would like to contact me for any sort of reason here are my socials
+## Discord 
+Username
+- _aanzo
+Server
+- [GalaxyVerse](https://discord.gg/ACwwBVtcSG)
