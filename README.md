@@ -27,3 +27,11 @@ Server
 
 Channel
 - [aanzo](https://www.youtube.com/@aanzo)
+
+-
+
+If you would please thank the people that have made this
+
+`anzo`
+`bully`
+`kayjay`
