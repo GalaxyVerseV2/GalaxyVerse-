@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyVerse</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            background-color: white; /* Default light mode background */
+            color: black; /* Default light mode text color */
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px; /* Optional: Rounded corners */
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+        #toggleButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #toggleButton:hover {
+            background-color: #777;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212; /* Dark background */
+            color: white; /* Light text color */
+        }
+
+        .navbar.dark-mode {
+            background-color: #1e1e1e; /* Dark navbar background */
+        }
+
+        /* Add dark mode styles for buttons if needed */
+    </style>
+</head>
+<body>
