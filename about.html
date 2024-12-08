@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GalaxyVerse</title>
+    <link rel="icon" href="https://google.com" type="image/png"> <!-- Favicon Link -->
     <style>
         body {
             font-family: sans-serif;
@@ -47,21 +48,48 @@
             background-color: #777;
         }
 
-        #toggleButton {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #555;
+        /* Page Button Styles */
+        .page-buttons {
+            display: flex;
+            justify-content: center; /* Center the buttons */
+            flex-wrap: wrap; /* Allow buttons to wrap to next line if necessary */
+            margin: 20px 0; /* Add margin for spacing */
+        }
+
+        .page-button {
+            background-color: #000000; /* Button color */
             color: white;
             border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
+            border-radius: 10px; /* Optional: Rounded corners */
             cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px 20px; /* Add padding for better appearance */
+            margin: 10px; /* Space between buttons */
             transition: background-color 0.3s;
         }
 
-        #toggleButton:hover {
-            background-color: #777;
+        .page-button:hover {
+            background-color: #3e3e3e; /* Darker color on hover */
+        }
+
+        /* Feedback Button Styles */
+        .feedback-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #9a9a9a; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-button:hover {
+            background-color: #6a6a6a; /* Darker green on hover */
         }
 
         /* Dark mode styles */
@@ -71,23 +99,21 @@
         }
 
         .navbar.dark-mode {
-            background-color: #1e1e1e; /* Dark navbar background */
+            background-color: #1E1E1E; /* Dark navbar background */
         }
-
-        /* Add dark mode styles for buttons if needed */
     </style>
 </head>
 <body>
 
-        <div class="navbar">
+    <div class="navbar">
         <div class="logo"><p style="color:purple;">🌌GalaxyVerse🌌</p></div>
         <div class="menu">
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/homepage.html'">Home</button>
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/about.html'">About</button>
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/websites.html'">Websites</button>
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/status_page.html'">Status Page</button>
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/settings.html'">Settings</button>
-            <button onclick="window.location.href='https://aanzos.github.io/GalaxyVerseV2/updatelog.html'">Update Log</button>        
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'">Home</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/about.html'">About</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/websites.html'">Websites</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/status_page.html'">Status Page</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/settings.html'">Settings</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/updatelog.html'">Update Log</button>        
         </div>
     </div>
 
