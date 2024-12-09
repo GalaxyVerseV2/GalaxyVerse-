@@ -40,6 +40,26 @@
             document.body.classList.add('dark-mode');
             document.querySelector('.navbar').classList.add('dark-mode');
         }
+
+        // Check for saved theme in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.navbar').classList.add('dark-mode');
+        }
+
+        // Dark mode toggle function
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.navbar').classList.toggle('dark-mode');
+
+            // Save the current theme in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
     </script>
 
 </body>
