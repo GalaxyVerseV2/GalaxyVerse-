@@ -60,6 +60,46 @@
                 localStorage.setItem('theme', 'light');
             }
         });
+
+          }
+        });
+
+        // Retrieve stored panic key and URL from localStorage
+        const storedKey = localStorage.getItem('panicKey');
+        const storedUrl = localStorage.getItem('panicUrl');
+
+        // Set the retrieved values to inputs if they exist
+        if (storedKey) {
+            document.getElementById('keyInput').value = storedKey;
+        }
+        if (storedUrl) {
+            document.getElementById('urlInput').value = storedUrl;
+        }
+
+        // Function to set the panic key and URL
+        document.getElementById('setPanicButton').addEventListener('click', function() {
+            const panicKey = document.getElementById('keyInput').value;
+            const panicUrl = document.getElementById('urlInput').value;
+
+            if (!panicKey || !panicUrl) {
+                alert('Please enter both a key and a URL.');
+            } else {
+                // Store the key and URL in localStorage
+                localStorage.setItem('panicKey', panicKey);
+                localStorage.setItem('panicUrl', panicUrl);
+                alert(`Panic key set to "${panicKey}" and URL set to "${panicUrl}"`);
+            }
+        });
+
+        // Event listener for keydown event
+        document.addEventListener('keydown', function(event) {
+            const panicKey = localStorage.getItem('panicKey');
+            const panicUrl = localStorage.getItem('panicUrl');
+
+            if (event.key === panicKey) {
+                window.location.href = panicUrl; // Redirect to the panic URL
+            }
+        });
     </script>
 
 </body>
