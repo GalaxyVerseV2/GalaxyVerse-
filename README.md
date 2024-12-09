@@ -37,4 +37,4 @@ If you would please thank the people that have made this
 - `anzo`
 - `bully`
 - `kayjay`
-- `tonimac` [page here](https://github.com/viberverse/viberverse.github.io)
+- `tonymac` [page here](https://github.com/viberverse/viberverse.github.io)
