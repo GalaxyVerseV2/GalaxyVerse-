@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GalaxyVerse</title>
-    <link rel="icon" href="https://google.com" type="image/png"> <!-- Favicon Link -->
     <style>
         body {
             font-family: sans-serif;
@@ -48,48 +47,59 @@
             background-color: #777;
         }
 
-        /* Page Button Styles */
-        .page-buttons {
-            display: flex;
-            justify-content: center; /* Center the buttons */
-            flex-wrap: wrap; /* Allow buttons to wrap to next line if necessary */
-            margin: 20px 0; /* Add margin for spacing */
-        }
-
-        .page-button {
-            background-color: #000000; /* Button color */
-            color: white;
-            border: none;
-            border-radius: 10px; /* Optional: Rounded corners */
-            cursor: pointer;
-            font-size: 16px;
-            text-align: center;
-            padding: 10px 20px; /* Add padding for better appearance */
-            margin: 10px; /* Space between buttons */
-            transition: background-color 0.3s;
-        }
-
-        .page-button:hover {
-            background-color: #3e3e3e; /* Darker color on hover */
-        }
-
-        /* Feedback Button Styles */
-        .feedback-button {
+        #toggleButton {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #9a9a9a; /* Green button */
+            background-color: #555;
             color: white;
             border: none;
-            border-radius: 5px;
             padding: 10px 15px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
             transition: background-color 0.3s;
         }
 
-        .feedback-button:hover {
-            background-color: #6a6a6a; /* Darker green on hover */
+        #toggleButton:hover {
+            background-color: #777;
+        }
+
+        /* Social Links Styles */
+        .social-button {
+            margin: 20px; /* Space from other elements */
+            padding: 10px 20px;
+            background-color: #000000; /* Button color */
+            color: white; /* Button text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .social-button:hover {
+            background-color: #3e3e3e; /* Darker blue on hover */
+        }
+
+        .social-links {
+            display: none; /* Initially hidden */
+            margin-top: 10px; /* Space above the links */
+            padding: 10px;
+            border: 1px solid #000000; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            background-color: white; /* Background color for the links */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .social-links a {
+            display: block; /* Block display for links */
+            color: #000000; /* Link color */
+            text-decoration: none; /* No underline */
+            margin: 5px 0; /* Space between links */
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        .social-links a:hover {
+            color: #4e4e4e; /* Darker link color on hover */
         }
 
         /* Dark mode styles */
@@ -101,6 +111,8 @@
         .navbar.dark-mode {
             background-color: #1E1E1E; /* Dark navbar background */
         }
+
+        /* Add dark mode styles for buttons if needed */
     </style>
 </head>
 <body>
@@ -111,9 +123,9 @@
             <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/homepage.html'">Home</button>
             <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/about.html'">About</button>
             <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/websites.html'">Websites</button>
-            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/status_page.html'">Status Page</button>
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/statuspage.html'">Status Page</button>
             <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/settings.html'">Settings</button>
-            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/updatelog.html'">Update Log</button>        
+            <button onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/updatelog'">Update Log</button>        
         </div>
     </div>
 
@@ -124,18 +136,18 @@
     <br>This webpage will be moved again but I am looking for a website to host on and a domain to buy so I dont have to keep moving to new websites
     
     <div class="page-buttons"><center>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/baconmaydie.html'">Bacon May Die</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-11.html'">Subway Surfers</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-10.html'">Retro Bowl</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-9.html'">BasketBros.IO</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-8.html'">Minecraft-18</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-7.html'">Minecraft-15</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-6.html'">Rooftop Snipers</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-5.html'">Amazing Rope Police (funny game)</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-4.html'">Cookie Clicker</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-3.html'">Among Us</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite.html'">Google-snake</button>
-        <button class="page-button" onclick="window.location.href='https://galaxyversev2.github.io/GalaxyVerseV2/gamewebsite-2.html'">Bitlife</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-12.html'">Backrooms</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-11.html'">Subway Surfers</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-10.html'">Retro Bowl</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-9.html'">BasketBros.IO</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-8.html'">Minecraft-18</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-7.html'">Minecraft-15</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-6.html'">Rooftop Snipers</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-5.html'">Amazing Rope Police (funny game)</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-4.html'">Cookie Clicker</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-3.html'">Among Us</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite.html'">Google-snake</button>
+        <button class="page-button" onclick="window.location.href='https://galaxyverse.w3spaces.com/gamewebsite-2.html'">Bitlife</button>
         </center>
     </div>
 
