@@ -100,6 +100,31 @@
                 window.location.href = panicUrl; // Redirect to the panic URL
             }
         });
+
+    // Check if user has already created an account
+        if (localStorage.getItem('accountCreated')) {
+            // Redirect directly to the specified website if account already created
+            window.location.href = 'https://galaxyverse.w3spaces.com/homepage.html'; // Redirect URL
+        }
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Here you can handle the form submission, e.g., send the data to your server
+            console.log('Account Created:', { name, email, password });
+
+            // Set account created flag in localStorage
+            localStorage.setItem('accountCreated', 'true');
+
+            // Redirect to the specified website
+            window.location.href = 'https://galaxyverse.w3spaces.com/homepage.html'; // Redirect URL
+        });
+
     </script>
 
 </body>
