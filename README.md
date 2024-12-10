@@ -41,3 +41,8 @@ If you would please thank the people that have made this
 - `bully`
 - `kayjay`
 - `tonymac` [page here](https://github.com/viberverse/viberverse.github.io)
+
+## Additional info 
+
+
+If you would like to and please star this project to show that we are doing good on this project and give us a good reputation
