@@ -111,6 +111,105 @@ body.dark-mode {
 .social-links a:hover {
     color: #4e4e4e; /* Darker link color on hover */
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyVerse</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }        .update-log {
+            padding: 20px;
+        }
+
+        .update-log h3 {
+            cursor: pointer;
+            background-color: #9e9e9e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .update-log-details {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            margin-top: 5px;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .navbar.dark-mode {
+            background-color: #1E1E1E;
+        }
+
+        .update-log h3.dark-mode {
+            background-color: #000000;
+        }
+
+        .update-log-details.dark-mode {
+            background-color: #1c1c1c;
+            border-left: 4px solid #000000;
+        }
+
+        #toggleButton {
+            margin: 20px; /* Added margin for better spacing */
+            padding: 10px 15px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #toggleButton:hover {
+            background-color: #777;
+        }
+
     </style>
 </head>
 <body>
