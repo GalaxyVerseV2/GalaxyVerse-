@@ -43,4 +43,4 @@ If you would please thank the people that have made this
 ## Additional info 
 
 
-If you would like to and please star this project to show that we are doing good on this project and give us a good reputation
+If you would like to and please star this project to show that we are doing good on this project and give us a good reputation. Also this is a remake of the orignal I just had a bunch of issues with it so thats why I dont touch it :P
