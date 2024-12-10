@@ -9,6 +9,7 @@ I will have a VIP perks or access for some parts of this but it will come later 
 
 ``https://galaxyversev2.github.io/GalaxyVerseV2/`` <---- is the website in case you didnt see the link on the side panel
 
+## Code
 
 Languages used in this respiratory
 
