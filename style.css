@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GalaxyVerse</title>
-    <style>
-       body {
+body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -111,15 +104,6 @@ body.dark-mode {
 .social-links a:hover {
     color: #4e4e4e; /* Darker link color on hover */
 }
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GalaxyVerse</title>
-    <style>
-        body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
@@ -209,7 +193,113 @@ body.dark-mode {
         #toggleButton:hover {
             background-color: #777;
         }
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            background-color: white; /* Default light mode background */
+            color: black; /* Default light mode text color */
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+        }
+
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px; /* Optional: Rounded corners */
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+        #toggleButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #toggleButton:hover {
+            background-color: #777;
+        }
+
+        /* Social Links Styles */
+        .social-button {
+            margin: 20px; /* Space from other elements */
+            padding: 10px 20px;
+            background-color: #000000; /* Button color */
+            color: white; /* Button text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .social-button:hover {
+            background-color: #3e3e3e; /* Darker blue on hover */
+        }
+
+        .social-links {
+            display: none; /* Initially hidden */
+            margin-top: 10px; /* Space above the links */
+            padding: 10px;
+            border: 1px solid #000000; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            background-color: white; /* Background color for the links */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .social-links a {
+            display: block; /* Block display for links */
+            color: #000000; /* Link color */
+            text-decoration: none; /* No underline */
+            margin: 5px 0; /* Space between links */
+            transition: color 0.3s; /* Smooth transition */
+        }
+
+        .social-links a:hover {
+            color: #4e4e4e; /* Darker link color on hover */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212; /* Dark background */
+            color: white; /* Light text color */
+        }
+
+        .navbar.dark-mode {
+            background-color: #1E1E1E; /* Dark navbar background */
+        }
+
+        /* Add dark mode styles for buttons if needed */
     </style>
 </head>
 <body>
