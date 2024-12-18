@@ -11,7 +11,7 @@
     function sendFeedback(feedback) {
         const webhookUrl = 'https://discord.com/api/webhooks/1310025772588732487/NBeW92ka5y-3tF851T4CplINNtDczQpPIu1Q9bmC-AudM0WEoM_ApcE7e6nSYdch2vO1'; // Replace with your actual webhook URL
         const payload = {
-            content: ` ||****Feedback Log:****|| ${feedback}` // Format the message for Discord
+            content:  ` ||****Feedback Log:****|| ${feedback}` // Format the message for Discord
         };
 
         fetch(webhookUrl, {
