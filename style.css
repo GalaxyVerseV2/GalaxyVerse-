@@ -104,202 +104,200 @@ body.dark-mode {
 .social-links a:hover {
     color: #4e4e4e; /* Darker link color on hover */
 }
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-        }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 20px;
-        }
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #333;
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    }
 
-        .navbar .logo {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+    }
 
-        .navbar button {
-            background-color: #555;
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            margin-left: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            border-radius: 10px;
-        }
+    .navbar .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-        .navbar button:hover {
-            background-color: #777;
-        }        .update-log {
-            padding: 20px;
-        }
+    .navbar button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 14px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 10px;
+    }
 
-        .update-log h3 {
-            cursor: pointer;
-            background-color: #9e9e9e;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
+    .navbar button:hover {
+        background-color: #777;
+    }        .update-log {
+        padding: 20px;
+    }
 
-        .update-log-details {
-            display: none;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-left: 4px solid #007BFF;
-            margin-top: 5px;
-        }
+    .update-log h3 {
+        cursor: pointer;
+        background-color: #9e9e9e;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
 
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #121212;
-            color: white;
-        }
+    .update-log-details {
+        display: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-left: 4px solid #007BFF;
+        margin-top: 5px;
+    }
 
-        .navbar.dark-mode {
-            background-color: #1E1E1E;
-        }
+    /* Dark mode styles */
+    body.dark-mode {
+        background-color: #121212;
+        color: white;
+    }
 
-        .update-log h3.dark-mode {
-            background-color: #000000;
-        }
+    .navbar.dark-mode {
+        background-color: #1E1E1E;
+    }
 
-        .update-log-details.dark-mode {
-            background-color: #1c1c1c;
-            border-left: 4px solid #000000;
-        }
+    .update-log h3.dark-mode {
+        background-color: #000000;
+    }
 
-        #toggleButton {
-            margin: 20px; /* Added margin for better spacing */
-            padding: 10px 15px;
-            background-color: #555;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .update-log-details.dark-mode {
+        background-color: #1c1c1c;
+        border-left: 4px solid #000000;
+    }
 
-        #toggleButton:hover {
-            background-color: #777;
-        }
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-            background-color: white; /* Default light mode background */
-            color: black; /* Default light mode text color */
-        }
+    #toggleButton {
+        margin: 20px; /* Added margin for better spacing */
+        padding: 10px 15px;
+        background-color: #555;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 20px;
-        }
+    #toggleButton:hover {
+        background-color: #777;
+    }
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        background-color: white; /* Default light mode background */
+        color: black; /* Default light mode text color */
+    }
 
-        .navbar .logo {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+    }
 
-        .navbar .menu {
-            display: flex;
-        }
+    .navbar .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-        .navbar button {
-            background-color: #555;
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            margin-left: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            border-radius: 10px; /* Optional: Rounded corners */
-        }
+    .navbar .menu {
+        display: flex;
+    }
 
-        .navbar button:hover {
-            background-color: #777;
-        }
+    .navbar button {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 14px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 10px; /* Optional: Rounded corners */
+    }
 
-        #toggleButton {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #555;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+    .navbar button:hover {
+        background-color: #777;
+    }
 
-        #toggleButton:hover {
-            background-color: #777;
-        }
+    #toggleButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
-        /* Social Links Styles */
-        .social-button {
-            margin: 20px; /* Space from other elements */
-            padding: 10px 20px;
-            background-color: #000000; /* Button color */
-            color: white; /* Button text color */
-            border: none; /* No border */
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            transition: background-color 0.3s; /* Smooth transition */
-        }
+    #toggleButton:hover {
+        background-color: #777;
+    }
 
-        .social-button:hover {
-            background-color: #3e3e3e; /* Darker blue on hover */
-        }
+    /* Social Links Styles */
+    .social-button {
+        margin: 20px; /* Space from other elements */
+        padding: 10px 20px;
+        background-color: #000000; /* Button color */
+        color: white; /* Button text color */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
 
-        .social-links {
-            display: none; /* Initially hidden */
-            margin-top: 10px; /* Space above the links */
-            padding: 10px;
-            border: 1px solid #000000; /* Border color */
-            border-radius: 5px; /* Rounded corners */
-            background-color: white; /* Background color for the links */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
+    .social-button:hover {
+        background-color: #3e3e3e; /* Darker blue on hover */
+    }
 
-        .social-links a {
-            display: block; /* Block display for links */
-            color: #000000; /* Link color */
-            text-decoration: none; /* No underline */
-            margin: 5px 0; /* Space between links */
-            transition: color 0.3s; /* Smooth transition */
-        }
+    .social-links {
+        display: none; /* Initially hidden */
+        margin-top: 10px; /* Space above the links */
+        padding: 10px;
+        border: 1px solid #000000; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        background-color: white; /* Background color for the links */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
 
-        .social-links a:hover {
-            color: #4e4e4e; /* Darker link color on hover */
-        }
+    .social-links a {
+        display: block; /* Block display for links */
+        color: #000000; /* Link color */
+        text-decoration: none; /* No underline */
+        margin: 5px 0; /* Space between links */
+        transition: color 0.3s; /* Smooth transition */
+    }
 
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #121212; /* Dark background */
-            color: white; /* Light text color */
-        }
+    .social-links a:hover {
+        color: #4e4e4e; /* Darker link color on hover */
+    }
 
-        .navbar.dark-mode {
-            background-color: #1E1E1E; /* Dark navbar background */
-        }
+    /* Dark mode styles */
+    body.dark-mode {
+        background-color: #121212; /* Dark background */
+        color: white; /* Light text color */
+    }
 
-        /* Add dark mode styles for buttons if needed */
-    </style>
-</head>
-<body>
+    .navbar.dark-mode {
+        background-color: #1e1e1e; /* Dark navbar background */
+    }
+
+    /* Add dark mode styles for buttons if needed */
