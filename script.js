@@ -1,4 +1,42 @@
 <script>
+
+        function toggleDetails(updateId) {
+            const details = document.getElementById(updateId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        // Check for saved theme in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.navbar').classList.add('dark-mode');
+            document.querySelectorAll('.update-log h3').forEach(header => header.classList.add('dark-mode'));
+            document.querySelectorAll('.update-log-details').forEach(detail => detail.classList.add('dark-mode'));
+        }
+
+        // Dark mode toggle function
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.navbar').classList.toggle('dark-mode');
+
+            // Update the update log styles
+            const updateHeaders = document.querySelectorAll('.update-log h3');
+            const updateDetails = document.querySelectorAll('.update-log-details');
+
+            updateHeaders.forEach(header => header.classList.toggle('dark-mode'));
+            updateDetails.forEach(detail => detail.classList.toggle('dark-mode'));
+
+            // Save the current theme in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
     document.getElementById('feedbackButton').onclick = function() {
         const feedback = prompt("Enter your username and then your feedback (EX: Nate123 - Add more games)");
         if (feedback) {
