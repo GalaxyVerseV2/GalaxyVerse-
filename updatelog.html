@@ -1,1 +1,237 @@
-<h1>Coming soon</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyVerse</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+        }
+
+        .navbar button:hover {
+            background-color: #777;
+        }
+
+        .update-log {
+            padding: 20px;
+        }
+
+        .update-log h3 {
+            cursor: pointer;
+            background-color: #9e9e9e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .update-log-details {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            margin-top: 5px;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        .navbar.dark-mode {
+            background-color: #1E1E1E;
+        }
+
+        .update-log h3.dark-mode {
+            background-color: #000000;
+        }
+
+        .update-log-details.dark-mode {
+            background-color: #1c1c1c;
+            border-left: 4px solid #000000;
+        }
+
+        #toggleButton {
+            margin: 20px; /* Added margin for better spacing */
+            padding: 10px 15px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #toggleButton:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo"><p style="color:purple;">🌌GalaxyVerse🌌</p></div>
+        <div class="menu">
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/homepage.html'">Home</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/about.html'">About</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/websites.html'">Websites</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/status_page.html'">Status Page</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/settings.html'">Settings</button>
+            <button onclick="window.location.href='https://galaxyverse.w3spaces.com/updatelog.html'">Update Log</button>        
+        </div>
+    </div>
+
+    <div class="update-log">
+        <h3 onclick="toggleDetails('update5')">Update Log - 11/20/24 - V.1.5.0 (Updates)</h3>
+        <div id="update5" class="update-log-details">
+            <ul>
+                <li>Fixing webpages</li>
+                <li>Fixing websites</li>
+                <li>Suggestion on homepage now out</li>
+                <li>New chat feature coming soon</li>
+                <li>Fixed a major bug 🤯</li>
+            </ul>
+        </div>
+
+        <h3 onclick="toggleDetails('update4')">Update Log - 11/18/24 - V.1.4.0</h3>
+        <div id="update4" class="update-log-details">
+            <ul>
+                <li>Chat page was removed due to it being buggy after fix and blocked on some schools</li>
+                <li>Moved to a new webpage</li>
+                <li>Soon adding feedback button on homepage.</li>
+                <li>Fixed minor bugs</li>
+                <li>Fixing games on homepage</li>
+                <li>Adding more games on homepage</li>
+                <li>Removed chat feature (just fixed😢)</li>
+            </ul>
+        </div>
+
+        <h3 onclick="toggleDetails('update3')">Update Log - 11/17/24 - V.1.3.0</h3>
+        <div id="update3" class="update-log-details">
+            <ul>
+                <li>Added more websites to the homepage</li>
+                <li>Fixed chat webpage (may be blocked for some schools)</li>
+                <li>Added more websites to the website page</li>
+                <li>Added cookie clicker</li>
+                <li>Added Yohoho.io</li>
+                <li>Added Rooftop Snipers</li>
+                <li>Added Bacon May Die</li>
+                <li>Changed chat page style</li>
+            </ul>
+        </div>
+
+        <h3 onclick="toggleDetails('update2')">Update Log - 11/15/24 - V.1.2.0 (biggest changes)</h3>
+        <div id="update2" class="update-log-details">
+            <ul>
+                <li>Added infinite-craft (request from friend)</li>
+                <li>Added contributors in about page</li>
+                <li>Added full screen to the game website page</li>
+                <li>Added an in-website game website</li>
+                <li>Chat page will be fixed by tomorrow (Friday)</li>
+                <li>Fixed Websites page dark mode navigation bar</li>
+                <li>Added Creators in About page</li>
+                <li>Added more websites to the Websites page.</li>
+                <li>Ongoing fixes for the Chat page. Check the status <a href="https://geography-lesson-4.w3spaces.com/status.html">here</a>.</li>
+            </ul>
+        </div>
+
+        <h3 onclick="toggleDetails('update1')">Update Log - 11/14/24 - V.1.1.0</h3>
+        <div id="update1" class="update-log-details">
+            <ul>
+                <li>Created Update Log Page.</li>
+                <li>Added more websites to the Websites page.</li>
+                <li>Implemented a one-time visit restriction on the login page.</li>
+                <li>Created a Settings page for user preferences.</li>
+                <li>Updated all pages for consistency and improvements.</li>
+                <li>Ongoing fixes for the Chat page. Check the status <a href="https://geography-lesson-4.w3spaces.com/status.html">here</a>.</li>
+            </ul>
+        </div>
+
+        <h3 onclick="toggleDetails('update0')">Update Log - 11/13/24 - V.1.0.0</h3>
+        <div id="update0" class="update-log-details">
+            <ul>
+                <li>Added an About page to provide information about the website.</li>
+                <li>Introduced a Status page for tracking website status and updates.</li>
+                <li>Enriched the Websites page with additional links.</li>
+                <li>Implemented Dark Mode feature across all pages for better user experience.</li>
+                <li>Addressed issues on the Chat page. Check the status <a href="https://geography-lesson-4.w3spaces.com/status.html">here</a>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="toggleButton">Toggle Dark Mode</button>
+
+    <script>
+        function toggleDetails(updateId) {
+            const details = document.getElementById(updateId);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        // Check for saved theme in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            document.querySelector('.navbar').classList.add('dark-mode');
+            document.querySelectorAll('.update-log h3').forEach(header => header.classList.add('dark-mode'));
+            document.querySelectorAll('.update-log-details').forEach(detail => detail.classList.add('dark-mode'));
+        }
+
+        // Dark mode toggle function
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.navbar').classList.toggle('dark-mode');
+
+            // Update the update log styles
+            const updateHeaders = document.querySelectorAll('.update-log h3');
+            const updateDetails = document.querySelectorAll('.update-log-details');
+
+            updateHeaders.forEach(header => header.classList.toggle('dark-mode'));
+            updateDetails.forEach(detail => detail.classList.toggle('dark-mode'));
+
+            // Save the current theme in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+
+</body>
+</html>
