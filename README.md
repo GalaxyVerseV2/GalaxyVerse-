@@ -1,5 +1,8 @@
 # GalaxyVerseV2
 
+## Note
+**THE WEBISTE IS NOT DONE SO IT YOU EXPERIENCE BUGS THAT IS OK**
+
 ## Info
 
 I made this website for me and my friends our school just loves to block stuff and so I told them I would make one. I have worked hard on this to find out different work arounds with my schools unhblocker so this did take me some time to make (a lot)
